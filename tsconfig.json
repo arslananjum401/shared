@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "declaration": true,
+    "composite": true,
+    "strict": true
+  },
+  "include": ["/**/*"]
+}
