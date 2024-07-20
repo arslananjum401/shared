@@ -3,6 +3,9 @@ type NotificationType = "BulkDownload-Quotation"
     | "BulkDownload-ManualInvoice"
     | "Ticket-Assignment-Res-To-Client"
     | "Ticket-Assignment-Res-To-Agent"
+    | "close-conversation-client"
+    | "Create Ticket"
+    | "Reopen-Ticket"
 export type Notification = {
     id: string;
     notificationType: NotificationType;
