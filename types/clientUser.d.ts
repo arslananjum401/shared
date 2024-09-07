@@ -16,6 +16,9 @@ interface Store {
     contactEmail: string;
     templateId: string | null;
     emailTemplateId: string | null;
+    storeHostName?: string | null,
+    storePhoneNumber?: string | null,
+    storeAddress?: string | null,
     billed: boolean | null;
 }
 
