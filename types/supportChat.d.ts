@@ -7,7 +7,11 @@ type SupportChatUser = {
 }
 export type SupportChat = {
     id: string;
-    supportMessages: SupportMessage[]
+    supportMessages: SupportMessage[];
+    store?: {
+        storeName: string;
+        storeHostName: string | null;
+    };
     problemName: string;
     chatStatus: "Opened" | "Closed";
     agent: SupportChatUser | null;

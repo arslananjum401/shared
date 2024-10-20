@@ -2,13 +2,20 @@
   "name": "@types/shared-invoice-app",
   "version": "4.2.2",
   "description": "TypeScript definitions for Invoice-app",
-  "main": "",
+  "main": "index.ts",
   "types": "index.d.ts",
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-      "directory": "types/crypto-js"
+  "scripts": {
+    "build": "npx tsc",
+    "postbuild": "copyfiles -u 1 src/types/**/* dist",
+    "watch": "npx tsc --watch"
   },
-  "scripts": {},
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory": "types/crypto-js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
 }

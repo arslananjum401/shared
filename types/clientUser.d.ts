@@ -18,16 +18,18 @@ interface Store {
     emailTemplateId: string | null;
     storeHostName?: string | null,
     storePhoneNumber?: string | null,
+    footerNoteText?: string | null,
+    vatNumber?: string | null,
     storeAddress?: string | null,
     billed: boolean | null;
 }
 
 export interface ClientUser {
     id: string;
-    firstName: string;
+    firstName: string | null;
     middleName: string | null;
-    lastName: string;
-    userName: string;
+    lastName: string | null;
+    userName: string | null;
     email: string;
     isVerifiedEmail: boolean;
     isEnabled: boolean;
