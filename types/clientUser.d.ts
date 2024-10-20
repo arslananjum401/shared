@@ -1,6 +1,7 @@
 interface Role {
     roleName: string;
     roleType: "Custom" | "General";
+    editAble: boolean;
     scopes: string[];
     id: string;
 }
